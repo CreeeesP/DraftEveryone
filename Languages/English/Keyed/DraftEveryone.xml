@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DE_PermanentDrafting>Permanent Drafting</DE_PermanentDrafting>
+  <DE_PermanentDraftingTooltip>Prevents controlled pawns from automatically undrafting.</DE_PermanentDraftingTooltip>
+  <DE_CannotOrderNonControlled>This pawn cannot be controlled.</DE_CannotOrderNonControlled>
+  <DE_DraftDescription>Draft this pawn and take direct control of it.</DE_DraftDescription>
+
+</LanguageData>

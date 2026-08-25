@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Draft Everyone</name>
+  <packageId>CreeeesP.DraftEveryone</packageId>
+  <author>CreeeesP</author>
+  <description>Allows you to directly control almost any RimWorld pawn through the draft system: animals, mechanoids, anomalous entities, as well as friendly, neutral, and hostile pawns.</description>
+  <url>https://github.com/CreeeesP/DraftEveryone</url>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+</ModMetaData>

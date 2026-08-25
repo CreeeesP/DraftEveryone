@@ -1,0 +1,7 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DraftEveryone\1.6\Assemblies\DraftEveryone.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DraftEveryone\DraftEveryone\obj\Debug\DraftEveryone.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DraftEveryone\DraftEveryone\obj\Debug\DraftEveryone.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DraftEveryone\DraftEveryone\obj\Debug\DraftEveryone.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DraftEveryone\DraftEveryone\obj\Debug\DraftEveryone.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DraftEveryone\DraftEveryone\obj\Debug\DraftEveryone.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DraftEveryone\DraftEveryone\obj\Debug\DraftEveryone.dll

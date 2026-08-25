@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DE_PermanentDrafting>Постоянный драфт</DE_PermanentDrafting>
+  <DE_PermanentDraftingTooltip>Предотвращает автоматическое снятие драфта с управляемых пешек.</DE_PermanentDraftingTooltip>
+  <DE_CannotOrderNonControlled>Этой пешкой нельзя управлять.</DE_CannotOrderNonControlled>
+  <DE_DraftDescription>Взять эту пешку под прямое управление.</DE_DraftDescription>
+
+</LanguageData>
