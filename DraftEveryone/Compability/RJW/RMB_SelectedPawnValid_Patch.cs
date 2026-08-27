@@ -1,4 +1,3 @@
-﻿using DraftEveryone;
 using HarmonyLib;
 using RimWorld;
 using Verse;
@@ -6,10 +5,15 @@ using Verse;
 namespace DraftEveryone.Compability.RJW
 {
     [HarmonyPatch(typeof(FloatMenuOptionProvider), "SelectedPawnValid")]
-    internal static class RJW_RMB_SelectedPawnValid_Patch
+    internal static class RMB_SelectedPawnValid_Patch
     {
         private static readonly System.Type RMBMenuType =
             AccessTools.TypeByName("rjw.RMB.RMB_Menu");
+
+        private static bool Prepare()
+        {
+            return RMBMenuType != null;
+        }
 
         private static void Postfix(
             FloatMenuOptionProvider __instance,
