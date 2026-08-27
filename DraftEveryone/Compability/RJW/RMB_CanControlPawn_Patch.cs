@@ -1,17 +1,28 @@
-﻿using DraftEveryone;
 using HarmonyLib;
-using RimWorld;
 using Verse;
 
 namespace DraftEveryone.Compability.RJW
 {
     [HarmonyPatch]
-    internal static class RJW_RMB_CanControlPawn_Patch
+    internal static class RMB_CanControlPawn_Patch
     {
+        private static bool rjwInstalled;
+        private static System.Reflection.MethodBase targetMethod;
+
+        private static bool Prepare()
+        {
+            rjwInstalled = AccessTools.TypeByName("rjw.RMB.RMB_Menu") != null;
+            return rjwInstalled;
+        }
+
         private static System.Reflection.MethodBase TargetMethod()
         {
-            return AccessTools.Method(
-                "rjw.RMB.RMB_Menu:CanControlPawn");
+            if (targetMethod == null && rjwInstalled)
+            {
+                targetMethod = AccessTools.Method(
+                    "rjw.RMB.RMB_Menu:CanControlPawn");
+            }
+            return targetMethod;
         }
 
         private static void Postfix(
