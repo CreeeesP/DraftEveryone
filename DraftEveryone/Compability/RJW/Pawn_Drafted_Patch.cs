@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using Verse;
 
 namespace DraftEveryone.Compability.RJW
@@ -20,11 +20,22 @@ namespace DraftEveryone.Compability.RJW
     }
 
     [HarmonyPatch]
-    internal static class RJW_MustNotBeDrafted_Patch
+    internal static class MustNotBeDrafted_Patch
     {
+        private static bool rjwInstalled;
+        private static System.Reflection.MethodBase targetMethod;
+        static bool Prepare()
+        {
+            rjwInstalled = AccessTools.TypeByName("rjw.JobDriver_SexBaseReciever") != null;
+            return rjwInstalled;
+        }
         static System.Reflection.MethodBase TargetMethod()
         {
-            return AccessTools.Method("rjw.JobDriver_SexBaseReciever:MustNotBeDrafted");
+            if (targetMethod == null && rjwInstalled)
+            {
+                targetMethod = AccessTools.Method("rjw.JobDriver_SexBaseReciever:MustNotBeDrafted");
+            }
+            return targetMethod;
         }
 
         static void Postfix(Pawn partner, ref bool __result)
